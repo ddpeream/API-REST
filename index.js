@@ -9,13 +9,13 @@ app.use(express.json());
 /* Puerto quemado en 3000 */
 const {config} = require('./config/index');
 const { logErrors, wrapErrors, errorHandler } = require('./utils/middleware/errorHandles');
-// const { notFoundHandler } = require('./utils/middleware/notFoundHandler')
+const notFoundHandler = require('./utils/middleware/notFoundHandler')
 
 /* Servidor con CRUD(get, post, put, update, delete) */
 moviesApi(app)
 
 /* Manejo del error 404 */
-// app.use(notFoundHandler)
+app.use(notFoundHandler)
 
 
 /* Capa de middleware (manejo de errores) */

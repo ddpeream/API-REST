@@ -18,6 +18,7 @@ function moviesApi(app) {
     const { tags } = req.query;
     try {
       const movies = await moviesService.getMovies({ tags });
+    //   throw new Error('error al obtener la pelicula')
       res.status(200).json({
         message: "Peliculas enviadas",
         data: movies,
