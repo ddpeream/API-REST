@@ -1,23 +1,13 @@
 const express = require('express');
-const app = express();
-const moviesMock = require('./utils/mocks/movies')
 const moviesApi = require('./routes/movies')
 
+const app = express();
 
 /* Middleware para parsear la data entrante */
 app.use(express.json());
 
 /* Puerto quemado en 3000 */
 const {config} = require('./config/index')
-
-/* Servidor directo con express */
-app.get('/', function(req, res){
-    res.send('Deimar Perea')
-})
-
-app.get('/json', function(req, res){
-    res.json(moviesMock)
-})
 
 /* Servidor con CRUD(get, post, put, update, delete) */
 moviesApi(app)
@@ -32,4 +22,4 @@ moviesApi(app)
 //app.use(errorHandler)
 
 /* Escuchando servidor */
-app.listen(config.port, () =>console.log('http://localhost:3000'))
+app.listen(config.port, () =>console.log('http://localhost:3000: Backend of movies'))

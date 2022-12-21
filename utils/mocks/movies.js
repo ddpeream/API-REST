@@ -47,7 +47,7 @@ const moviesMock = [
       year: 2018,
       cover: 'http://dummyimage.com/800x600.png/ff4444/ffffff',
       description:
-        'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',
+        'CurabiIn hac habitasse platea dictumst. Etiam faucibus cursus urnatur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.',
       duration: 142,
       contentRating: 'PG',
       source: 'http://odnoklassniki.ru/porta/volutpat/erat.jsp',
